@@ -21,12 +21,6 @@ Role Variables
 
 All tasks are run with privilege escalation by default. As per the [Ansible documentation](http://docs.ansible.com/ansible/become.html) `become_user` defaults to the root user, so installation will be run as root by default.
 
-```yml
-# vars/main.yml
-
-become: yes
-```
-
 ####Login:
 
 The [Docker Hub](https://hub.docker.com/) username, password are required for login. The task will be skipped if any are missing.
